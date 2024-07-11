@@ -1,0 +1,388 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background-color: rgb(160, 184, 157);
+    margin: 0;
+}
+
+header{
+    display: flex;
+    background-color: hsla(0, 0%, 90%, 0.6);
+    box-shadow: 5px 10px 10px hsla(0, 0%, 44%, 0.2);
+    width: 100%;
+    margin: 0px;
+    height: 100px;
+}
+
+#hname{
+    font-size: 30px;
+    font-weight: bolder;
+    margin-left: 5%;
+    color: white;
+    display: none;
+}
+
+header > h1{
+    font-size: 43px;
+    font-weight: bolder;
+    margin-left: 5%;
+    color: white;
+}
+
+#group{
+    margin-left: 38%;
+}
+
+#group > *{
+    display: inline-flex;
+    margin: 40px 20px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    color: rgb(64, 117, 64) !important;
+}
+
+#into{
+    margin: 400px 100px 70px;
+}
+
+#name{
+    font-size: 100px;
+    margin: 0px;
+    display: inline-flex;
+}
+
+#emoji{
+    height: 40px;
+    width: 40px;
+    margin-left: 20px;
+}
+
+#into > h2{
+    font-size: 30px;
+    margin: 0px 10px;
+    font-weight: lighter;
+}
+
+#into > h3{
+    font-size: 20px;
+    margin: 0px;
+}
+
+#aprtext{
+    text-align: center;
+    font-size: 22px;
+    margin: 80px 0 50px;
+}
+
+#aprtext > *{
+    margin: 0 11%;
+}
+
+#skills{
+    text-align: center;
+    background-color: hsl(0, 0%, 100%, 0.5);
+}
+
+#skillstitle{
+    font-size: 70px;
+    font-weight: bold;
+    padding-top: 60px;
+}
+
+#skillsorg{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 2%;
+    padding-bottom: 60px;
+}
+
+#skill{
+    width: 430px;
+    justify-content: center;
+    text-align: center;
+    margin: 25px 15px;
+}
+
+#skill > img{
+    width: 60px;
+    height: 50px;
+}
+
+#skill > p{
+    font-size: 20px;
+}
+
+
+#projects{
+    text-align: center;
+    padding: 50px 5% 50px;
+}
+
+#projecttext > p{
+    font-size: 25px;
+    margin: 10px 5%;
+}
+
+#projectsorg{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 60px 0;
+}
+
+#project{
+    background-color: white;
+    height: fit-content;
+    width: 350px;
+    border-radius: 10px;
+    padding: 30px 10px;
+    margin: 25px 15px;
+}
+
+#project > img{
+    width: 90%;
+    border-radius: 10px;
+}
+
+#project > p{
+    padding-bottom: 10px;
+}
+
+#project > a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#project > a:hover{
+    background-color:  rgb(160, 184, 157) !important;
+    color: white !important;
+}
+
+footer{
+    color: white;
+    border-top: 2px solid white;
+    text-align: center;
+}
+
+#footertext{
+    margin: 0 20%;
+}
+
+#footersocial{
+    margin: 50px 0 30px;
+}
+
+#footersocial > a{
+    color: white;
+    margin-left: 40px;
+    font-size: 17px;
+}
+
+@media only screen and (max-width: 1300px){
+    #group{
+        margin-left: 33%;
+    }
+    #into{
+        margin: 400px 50px 70px;
+    }
+}
+
+@media only screen and (max-width: 1250px){
+    #aprtext > *{
+        margin: 0 5%;
+    }
+    #footertext{
+        margin: 0 10%;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    #group{
+        margin-left: 28%;
+    }
+}
+
+@media only screen and (max-width: 1120px){
+    header > h1{
+        margin-left: 2%;
+    }
+    #group{
+        margin-left: 24%;
+    }
+    #name{
+        font-size: 85px;
+    }
+    #into > h2{
+        font-size: 25px;
+    }
+    #aprtext > *{
+        margin: 0 1%;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    header > h1{
+        margin-left: 2%;
+        font-size: 40px;
+    }
+    #group{
+        margin-left: 20%;
+    }
+    #name{
+        font-size: 78px;
+    }
+    #emoji{
+        margin-left: 10px;
+    }
+    #into > h2{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 950px){
+    header > h1{
+        display: none;
+    }
+    #hname{
+        display: flex;
+    }
+    #group{
+        margin-left: 30%;
+    }
+    #name{
+        font-size: 70px;
+    }
+    #emoji{
+        width: 35px;
+        height: 35px;
+        margin-left: 0;
+    }
+    #into > h2{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 850px){
+    header > h1{
+        display: none;
+    }
+    #hname{
+        display: flex;
+    }
+    #group{
+        margin-left: 23%;
+    }
+    #name{
+        font-size: 60px;
+    }
+    #into > h2{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 760px){
+    header > h1{
+        display: none;
+    }
+    #hname{
+        display: flex;
+    }
+    #group{
+        margin-left: 13%;
+    }
+    #name{
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    header > h1{
+        display: none;
+    }
+    #hname{
+        display: flex;
+    }
+    #group{
+        display: none;
+    }
+    #name{
+        font-size: 40px;
+    }
+    #emoji{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    header > h1{
+        display: none;
+    }
+    #hname{
+        display: flex;
+    }
+    #group{
+        display: none;
+    }
+    #into{
+        margin: 200px 10px 0;
+    }
+    #name{
+        font-size: 30px;
+    }
+    #emoji{
+        width: 20px;
+        height: 20px;
+    }
+    #aprtext{
+        font-size: 17px;
+    }
+    #skillstitle{
+        font-size: 50px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

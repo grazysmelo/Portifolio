@@ -149,6 +149,7 @@ a:hover {
 
 #project > img{
     width: 90%;
+    height: 230px;
     border-radius: 10px;
 }
 

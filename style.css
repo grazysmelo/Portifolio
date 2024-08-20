@@ -3,69 +3,61 @@
 }
 
 body{
-    background-color: rgb(160, 184, 157);
     margin: 0;
+}
+
+a:hover{
+    color: black !important;
 }
 
 header{
     display: flex;
-    background-color: hsla(0, 0%, 90%, 0.6);
-    box-shadow: 5px 10px 10px hsla(0, 0%, 44%, 0.2);
+    background-color: darkred;
+    box-shadow: 5px 10px 10px hsla(0, 8%, 5%, 0.3);
     width: 100%;
     margin: 0px;
     height: 100px;
 }
 
 #hname{
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bolder;
-    margin-left: 5%;
+    margin-left: 10%;
     color: white;
+    align-items: center;
     display: none;
 }
 
 header > h1{
     font-size: 43px;
     font-weight: bolder;
-    margin-left: 5%;
+    margin-left: 6%;
     color: white;
-}
-
-#group{
-    margin-left: 38%;
-}
-
-#group > *{
-    display: inline-flex;
-    margin: 40px 20px;
-    font-size: 20px;
-    color: white;
-    text-decoration: none;
-}
-
-a:hover {
-    cursor: pointer;
-    color: rgb(64, 117, 64) !important;
 }
 
 #into{
-    margin: 400px 100px 70px;
+    margin-top: 320px;
+}
+
+#into > *{
+    justify-content: center;
+    text-align: center;
 }
 
 #name{
-    font-size: 100px;
+    font-size: 80px;
     margin: 0px;
     display: inline-flex;
+    padding-right: 20px;
 }
 
 #emoji{
     height: 40px;
     width: 40px;
-    margin-left: 20px;
 }
 
 #into > h2{
-    font-size: 30px;
+    font-size: 25px;
     margin: 0px 10px;
     font-weight: lighter;
 }
@@ -76,24 +68,25 @@ a:hover {
 }
 
 #aprtext{
+    margin: 100px 0 150px;
+    padding: 0 8%;
     text-align: center;
+    justify-content: center;
     font-size: 22px;
-    margin: 80px 0 50px;
-}
-
-#aprtext > *{
-    margin: 0 11%;
 }
 
 #skills{
     text-align: center;
-    background-color: hsl(0, 0%, 100%, 0.5);
+    background-color: darkred;
+    box-shadow: 5px 10px 10px hsla(0, 8%, 5%, 0.3);
+    color: white;
 }
 
 #skillstitle{
-    font-size: 70px;
+    font-size: 50px;
     font-weight: bold;
-    padding-top: 60px;
+    padding: 60px 0 80px;
+    margin: 0;
 }
 
 #skillsorg{
@@ -108,7 +101,7 @@ a:hover {
     width: 430px;
     justify-content: center;
     text-align: center;
-    margin: 25px 15px;
+    margin: 25px 35px;
 }
 
 #skill > img{
@@ -120,10 +113,14 @@ a:hover {
     font-size: 20px;
 }
 
-
 #projects{
     text-align: center;
     padding: 50px 5% 50px;
+}
+
+#projecttext > h3{
+    font-size: 50px;
+    font-weight: bold;
 }
 
 #projecttext > p{
@@ -139,7 +136,7 @@ a:hover {
 }
 
 #project{
-    background-color: white;
+    border: 3px solid black;
     height: fit-content;
     width: 350px;
     border-radius: 10px;
@@ -155,171 +152,70 @@ a:hover {
 
 #project > p{
     padding-bottom: 10px;
+    font-size: 20px;
 }
 
 #project > a{
     font-size: 20px;
     text-decoration: none;
-    color: black;
-    border: 2px solid black;
+    color: white;
+    border: 3px solid black;
     border-radius: 20px;
     padding: 10px;
+    background-color: darkred;
 }
 
-#project > a:hover{
-    background-color:  rgb(160, 184, 157) !important;
-    color: white !important;
-}
 
 footer{
-    color: white;
-    border-top: 2px solid white;
+    border-top: 3px solid black;
     text-align: center;
+    background-color: darkred;
+    color: white;
 }
 
-#footertext{
-    margin: 0 20%;
+#footertext > h3{
+    color: black;
+    padding: 0 15%;
 }
 
 #footersocial{
-    margin: 50px 0 30px;
+    padding: 50px 0 30px;
 }
 
 #footersocial > a{
     color: white;
-    margin-left: 40px;
     font-size: 17px;
-}
-
-@media only screen and (max-width: 1300px){
-    #group{
-        margin-left: 33%;
-    }
-    #into{
-        margin: 400px 50px 70px;
-    }
-}
-
-@media only screen and (max-width: 1250px){
-    #aprtext > *{
-        margin: 0 5%;
-    }
-    #footertext{
-        margin: 0 10%;
-    }
-}
-
-@media only screen and (max-width: 1200px){
-    #group{
-        margin-left: 28%;
-    }
-}
-
-@media only screen and (max-width: 1120px){
-    header > h1{
-        margin-left: 2%;
-    }
-    #group{
-        margin-left: 24%;
-    }
-    #name{
-        font-size: 85px;
-    }
-    #into > h2{
-        font-size: 25px;
-    }
-    #aprtext > *{
-        margin: 0 1%;
-    }
-}
-
-@media only screen and (max-width: 1000px){
-    header > h1{
-        margin-left: 2%;
-        font-size: 40px;
-    }
-    #group{
-        margin-left: 20%;
-    }
-    #name{
-        font-size: 78px;
-    }
-    #emoji{
-        margin-left: 10px;
-    }
-    #into > h2{
-        font-size: 20px;
-    }
+    text-decoration: none;
+    padding: 10px 15px;
 }
 
 @media only screen and (max-width: 950px){
-    header > h1{
-        display: none;
-    }
-    #hname{
-        display: flex;
-    }
-    #group{
-        margin-left: 30%;
-    }
     #name{
         font-size: 70px;
+        padding-right: 5px;
     }
-    #emoji{
-        width: 35px;
-        height: 35px;
-        margin-left: 0;
-    }
-    #into > h2{
-        font-size: 20px;
+    #aprtext{
+        margin: 70px 0 100px;
+        padding: 0 4%;
+        font-size: 18px;
     }
 }
 
 @media only screen and (max-width: 850px){
-    header > h1{
-        display: none;
-    }
-    #hname{
-        display: flex;
-    }
-    #group{
-        margin-left: 23%;
-    }
     #name{
-        font-size: 60px;
+        font-size: 65px;
     }
     #into > h2{
-        font-size: 18px;
+        font-size: 20px;
     }
 }
 
 @media only screen and (max-width: 760px){
     header > h1{
-        display: none;
-    }
-    #hname{
-        display: flex;
-    }
-    #group{
-        margin-left: 13%;
+        font-size: 37px;
     }
     #name{
-        font-size: 50px;
-    }
-}
-
-@media only screen and (max-width: 650px){
-    header > h1{
-        display: none;
-    }
-    #hname{
-        display: flex;
-    }
-    #group{
-        display: none;
-    }
-    #name{
-        font-size: 40px;
+        font-size: 60px;
     }
     #emoji{
         width: 30px;
@@ -327,63 +223,29 @@ footer{
     }
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 700px){
+    #name{
+        display: flex;
+        font-size: 40px;
+        margin: 0 20%;
+    }
     header > h1{
         display: none;
     }
     #hname{
         display: flex;
     }
-    #group{
-        display: none;
-    }
-    #into{
-        margin: 200px 10px 0;
-    }
-    #name{
-        font-size: 30px;
-    }
-    #emoji{
-        width: 20px;
-        height: 20px;
-    }
-    #aprtext{
-        font-size: 17px;
-    }
-    #skillstitle{
-        font-size: 50px;
-    }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media only screen and (max-width: 500px){
+    #name{
+        font-size: 40px;
+        margin: 0 7%;
+    }
+    #skillstitle{
+        font-size: 30px;
+    }
+    #projecttext > h3{
+        font-size: 30px;
+    }
+}
